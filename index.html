@@ -278,9 +278,9 @@
 
 <header>
   <div class="header-inner">
-    <p class="header-eyebrow">Parker [Last Name], PE</p>
+    <p class="header-eyebrow">Parker Wall, PE</p>
     <h1>Engineering <em>publications</em><br>& research</h1>
-    <p class="header-bio">Research and engineering work spanning energy efficiency, building systems, load management, and data center infrastructure.</p>
+    <p class="header-bio">Research and engineering work spanning energy efficiency, building systems, load management, and infrastructure.</p>
   </div>
 </header>
 
@@ -304,6 +304,7 @@
 <main>
   <div class="filter-row">
     <button class="filter-btn active" data-filter="all" onclick="filter(this)">All publications</button>
+    <button class="filter-btn" data-filter="tool development" onclick="filter(this)">Tool Development</button>
     <button class="filter-btn" data-filter="report" onclick="filter(this)">Technical reports</button>
     <button class="filter-btn" data-filter="journal" onclick="filter(this)">Journal / conference</button>
     <button class="filter-btn" data-filter="presentation" onclick="filter(this)">Presentations</button>
@@ -311,64 +312,74 @@
 
   <div class="pub-list" id="pub-list">
 
+    <div class="pub-card" data-type="Tool Development">
+      <div class="pub-header">
+        <div class="pub-title">Residential Electrical Service Upgrade Decision Tool</div>
+        <span class="badge badge-tool development">Tool Development</span>
+      </div>
+      <div class="pub-meta">Parker Wall · 2024 · CalNEXT Tool Development</div>
+      <div class="pub-abstract">Tool to assess building electrical capacity and planned upgrades to provide recommendations to user.</div>
+      <div class="pub-footer"><a class="pub-link" href="https://calnext.com/wp-content/uploads/2024/09/ET23SWE0021_Residential-Electrical-Service-Upgrade-Decision-Tool_Final-Report.pdf">View tool →</a></div>
+    </div>
+
+    <div class="pub-card" data-type="Tool Development">
+      <div class="pub-header">
+        <div class="pub-title">NEEP ASHP Tool</div>
+        <span class="badge badge-tool development">Tool Development</span>
+      </div>
+      <div class="pub-meta">Parker Wall · 2022 · NEEP Tool Development</div>
+      <div class="pub-abstract">Tool to find, size, and design ASHP systems using manufacturer provided engineering data and TMY3 weather data.</div>
+      <div class="pub-footer"><a class="pub-link" href="https://ashp.neep.org/#!/">View tool →</a></div>
+    </div>
+
     <div class="pub-card" data-type="report">
       <div class="pub-header">
-        <div class="pub-title">Demand flexibility in commercial HVAC systems: a load management framework for grid-interactive buildings</div>
-        <span class="badge badge-report">Technical report</span>
+        <div class="pub-title">Best Practice Guide: Co-Promotion of Weatherization and High-Performance HVAC in Programs</div>
+        <span class="badge badge-Journal Paper">Journal Paper</span>
       </div>
-      <div class="pub-meta">Parker [Last Name] · 2024 · Internal white paper</div>
-      <div class="pub-abstract">Examines demand response strategies for large commercial HVAC loads, with a focus on BACnet/Modbus integration for automated curtailment signaling and grid coordination.</div>
-      <div class="pub-footer"><a class="pub-link" href="#">View report →</a></div>
+      <div class="pub-meta">Parker Wall · 2025 · PNNL Published Research Paper</div>
+      <div class="pub-abstract">Examines the benefits and best practices of improving both the envelope and HVAC system in a building.</div>
+      <div class="pub-footer"><a class="pub-link" href="https://neep.org/best-practice-guide-co-promotion-weatherization-and-high-performance-hvac-programs">View report →</a></div>
     </div>
 
     <div class="pub-card" data-type="journal">
       <div class="pub-header">
-        <div class="pub-title">PUE benchmarking and cooling efficiency optimization in hyperscale data centers</div>
+        <div class="pub-title">Training Recommendations for Designing & Sizing Air Source Heat Pumps in Cold Climates</div>
         <span class="badge badge-journal">Journal paper</span>
       </div>
-      <div class="pub-meta">Parker [Last Name] · 2023 · ASHRAE Transactions, Vol. 129</div>
-      <div class="pub-abstract">Analysis of cooling system efficiency across facility types, comparing air-side economization, liquid cooling, and hybrid approaches with measured PUE outcomes against ASHRAE TC 9.9 guidelines.</div>
-      <div class="pub-footer"><a class="pub-link" href="#">View paper →</a></div>
-    </div>
-
-    <div class="pub-card" data-type="presentation">
-      <div class="pub-header">
-        <div class="pub-title">Grid-interactive data centers: from passive consumers to active grid participants</div>
-        <span class="badge badge-presentation">Presentation</span>
-      </div>
-      <div class="pub-meta">Parker [Last Name] · 2024 · IEEE ESTS Conference</div>
-      <div class="pub-abstract">Conference presentation exploring how data centers can shift from static load profiles to dynamic grid assets through demand response, behind-the-meter storage, and SCADA/BMS integration.</div>
-      <div class="pub-footer"><a class="pub-link" href="#">View slides →</a></div>
+      <div class="pub-meta">Parker Wall · 2025 · NEEP</div>
+      <div class="pub-abstract">Recommendations for designing and sizing air source heat pumps in cold climates to increase efficiency and reliability of the systems.</div>
+      <div class="pub-footer"><a class="pub-link" href="https://neep.org/training-recommendations-designing-sizing-air-source-heat-pumps-cold-climates">View journal →</a></div>
     </div>
 
     <div class="pub-card" data-type="report">
       <div class="pub-header">
-        <div class="pub-title">Electrification readiness assessment methodology for commercial building portfolios</div>
+        <div class="pub-title">User Guide: Cold Climate Heat Pump Sizing Support Tools</div>
+        <span class="badge badge-journal">Journal paper</span>
+      </div>
+      <div class="pub-meta">Parker Wall · 2024 · NEEP</div>
+      <div class="pub-abstract">Guide to the NEEP ASHP sizing support tools.</div>
+      <div class="pub-footer"><a class="pub-link" href="https://neep.org/user-guide-cold-climate-heat-pump-sizing-support-tools">View slides →</a></div>
+    </div>
+
+    <div class="pub-card" data-type="report">
+      <div class="pub-header">
+        <div class="pub-title">Comfort Impacts of Partial Coverage ASHPs</div>
         <span class="badge badge-report">Technical report</span>
       </div>
-      <div class="pub-meta">Parker [Last Name] · 2022 · Consulting firm white paper</div>
-      <div class="pub-abstract">Outlines a tiered assessment framework for evaluating electrical infrastructure capacity, load growth headroom, and phased electrification pathways for mixed-use commercial building portfolios.</div>
-      <div class="pub-footer"><a class="pub-link" href="#">View report →</a></div>
+      <div class="pub-meta">Parker Wall · 2025 · CalNEXT Research Report</div>
+      <div class="pub-abstract">Assesses comfort and energy impacts of installing heat pumps with smaller capacity than industry standard.</div>
+      <div class="pub-footer"><a class="pub-link" href="https://calnext.com/wp-content/uploads/2025/12/ET23SWE0050_Comfort-Impacts-of-Partial-Coverage-ASHPs_Final-Report.pdf">View report →</a></div>
     </div>
 
     <div class="pub-card" data-type="journal">
       <div class="pub-header">
-        <div class="pub-title">IT/OT integration challenges in legacy building management systems</div>
-        <span class="badge badge-journal">Conference paper</span>
+        <div class="pub-title">CEE Residential Heating and Cooling Systems Initiative</div>
+        <span class="badge badge-journal">Journal paper</span>
       </div>
-      <div class="pub-meta">Parker [Last Name] · 2021 · ASHRAE Annual Conference Proceedings</div>
-      <div class="pub-abstract">Case study analysis of Modbus-to-BACnet protocol bridging in retrofit scenarios, documenting interoperability failures, latency issues, and recommended integration patterns for SCADA deployments.</div>
-      <div class="pub-footer"><a class="pub-link" href="#">View paper →</a></div>
-    </div>
-
-    <div class="pub-card" data-type="presentation">
-      <div class="pub-header">
-        <div class="pub-title">Energy efficiency as a design constraint: lessons from high-density compute facilities</div>
-        <span class="badge badge-presentation">Presentation</span>
-      </div>
-      <div class="pub-meta">Parker [Last Name] · 2019 · AEE World Energy Conference</div>
-      <div class="pub-abstract">Early-career presentation examining how energy efficiency targets can be embedded as first-order design constraints in high-density mechanical and electrical systems, rather than retrofitted after commissioning.</div>
-      <div class="pub-footer"><a class="pub-link" href="#">View slides →</a></div>
+      <div class="pub-meta">Parker Wall · 2023 · Consortium for Energy Efficiency</div>
+      <div class="pub-abstract">Efficiency resources for air source heat pump deployment across the US.</div>
+      <div class="pub-footer"><a class="pub-link" href="https://cee1.org/influencing-markets/air-source-heat-pump-quality-installation-tools-and-guidance/">View paper →</a></div>
     </div>
 
   </div>
@@ -377,7 +388,7 @@
 </main>
 
 <footer>
-  Parker [Last Name], PE · San Diego, CA
+  Parker Wall, PE · San Diego, CA
 </footer>
 
 <script>
